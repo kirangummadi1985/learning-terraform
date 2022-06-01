@@ -9,6 +9,11 @@ provider "aws" {
 }
 
 terraform {
+  backend "s3" {
+    bucket = "terraform-devopsb64"
+    key    = "example1/terraform.tfstate"
+    region = "us-east-1"
+  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
