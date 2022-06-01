@@ -1,6 +1,6 @@
 resource "aws_security_group" "allow_ec2" {
-  name        = "sg-for-${var.COMPONENT}"
-  description = "sg-for-${var.COMPONENT}"
+  name        = "for-${var.COMPONENT}"
+  description = "for-${var.COMPONENT}"
 
   ingress {
     description = "SSH from VPC"
@@ -19,6 +19,6 @@ resource "aws_security_group" "allow_ec2" {
   }
 
   tags = {
-    Name = "sg-for-${var.COMPONENT}"
+    Name = "for-${var.COMPONENT}"
   }
 }
