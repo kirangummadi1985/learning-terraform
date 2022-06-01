@@ -1,6 +1,7 @@
 resource "aws_instance" "sample" {
   instance_type = "t3.micro"
   ami           = "ami-0ec3252759130198b"
+  vpc_security_group_ids = [aws_security_group.allow_ec2.id]
 }
 
 provider "aws" {
