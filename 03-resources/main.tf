@@ -1,4 +1,4 @@
-resource "aws_instance" "web" {
+resource "aws_instance" "sample" {
   instance_type = "t3.micro"
   ami           = "ami-0ec3252759130198b"
 }
