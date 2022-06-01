@@ -3,4 +3,7 @@ module  "frontend" {
   INSTANCE_TYPE = "t3.micro"
   AMI           = "ami-0ec3252759130198b"
   COMPONENT     = "frontend"
+  PORT          = 80
 }
+
+
